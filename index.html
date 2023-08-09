@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Trip to do</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <header id="survey-header">
+          <h1 id="title">Trip Planning Ahead! 🚀</h1>
+          <p id="description">
+            In this survey we want to check what kind of trip we'd like to plan.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Joe"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="joe@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Days available</label>
+            <input
+              id="number"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="10"
+            />
+          </div>
+          <div class="form-group">
+            <label id="destination-label" for="dropdown">Destination</label>
+            <select id="dropdown">
+              <option>Lake</option>
+              <option>Mountains</option>
+              <option>Landside</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Activities</p>
+            <label for="hiking"
+              ><input
+                id="hiking"
+                type="checkbox"
+                name="prefer"
+                value="hiking"
+              />Hike</label
+            >
+
+            <label for="volleyball"
+              ><input
+                id="volleyball"
+                type="checkbox"
+                name="prefer"
+                value="volleyball"
+              />Volleyball tournament</label
+            >
+
+            <label for="party"
+              ><input
+                id="party"
+                type="checkbox"
+                name="prefer"
+                value="party"
+              />Party</label
+            >
+
+            <label for="cooking"
+              ><input
+                id="cooking"
+                type="checkbox"
+                name="prefer"
+                value="cooking"
+              />Cooking together</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Arrival</p>
+            <label for="bike"
+              ><input id="bike" type="radio" name="arrival" value="bike" />by
+              bike</label
+            >
+
+            <label for="car"
+              ><input id="car" type="radio" name="arrival" value="car" />by
+              car</label
+            >
+
+            <label for="foot"
+              ><input id="foot" type="radio" name="arrival" value="foot" />by
+              foot</label
+            >
+          </div>
+          <div class="form-group">
+            <!-- Text area -->
+            <p>Any comments or suggestions?</p>
+            <textarea
+              name="comments"
+              rows="10"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <!-- Submit button -->
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

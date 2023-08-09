@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ritwickdey.liveserver",
+    "ms-vscode-remote.remote-containers",
+    "esbenp.prettier-vscode"
+  ]
+}
