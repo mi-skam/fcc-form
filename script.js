@@ -19,9 +19,8 @@ const jsonForm = (data) => {
 const formHandler = (event) => {
   event.preventDefault();
   const data = new FormData(event.target);
-  const output = jsonForm(data);
-
-  return output;
+  
+  return jsonForm(data);
 };
 
 const form = document.querySelector("form");
